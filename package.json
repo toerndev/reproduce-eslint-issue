@@ -1,0 +1,21 @@
+{
+  "name": "reproduce-eslint-issue",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "web"
+    ]
+  },
+  "scripts": {
+    "lint": "eslint --ext 'cjs,js,json,jsx,mjs,ts,tsx' --no-cache web/src"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "5.30.5",
+    "@typescript-eslint/parser": "5.30.5",
+    "eslint": "8.19.0",
+    "eslint-import-resolver-typescript": "3.2.5",
+    "eslint-plugin-import": "2.26.0",
+    "typescript": "4.7.4"
+  },
+  "packageManager": "yarn@3.1.0"
+}
